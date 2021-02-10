@@ -1,0 +1,33 @@
+/* dot_product is a procedure */
+
+ALGORITHM dot_product
+VAR
+    V1 : ARRAY_OF INTEGER[3]; 
+    V2 : ARRAY_OF INTEGER[3]; 
+    vectorSet : ARRAY_OF ARRAY_OF ARRAY_OF INTEGER[n];
+    vectorPair : ARRAY_OF ARRAY_OF INTEGER[2];
+    i,j:INTEGER;
+
+    [ [[1, 2, 3],[1, 2, 3]] , [[1, 2, 3],[1, 2, 3]] ,[[1, 2, 3],[1, 2, 3]] ]
+    [       vectorPair      ,       vectorPair      ,       vectorPair     ]
+BEGIN
+    //dot_product
+    Read(vectorSet);
+    PROCEDURE dot_product (pair)
+        VAR
+            theDot : INTEGER;
+            V1 := pair[0];
+            V2 := pair[1];
+        BEGIN
+            theDot := 0
+            FOR i FROM 0 TO V1.length - 1 STEP 1  DO
+                product := V1[i] * V2[i];
+                theDot := theDot + product;
+            END_FOR
+    END
+
+    FOR j FROM 0 TO vectorSet.length - 1 STEP 1  DO
+        
+    END_FOR
+
+END
